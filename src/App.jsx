@@ -2,14 +2,11 @@ import { useState } from "react";
 
 import "./App.css";
 import { Digitalclock } from "./componants/digitalclock.jsx";
- function App() {
-	
-
+function App() {
 	return (
 		<>
-			<Digitalclock/>
+			<Digitalclock />
 		</>
 	);
 }
 export default App;
-
