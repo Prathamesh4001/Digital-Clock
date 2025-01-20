@@ -40,10 +40,10 @@ export const Digitalclock = () => {
       
       <div className="bg-white text-gray-800 rounded-lg shadow-lg px-12 py-8 text-center transform hover:scale-105 transition-all duration-300 ease-in-out">
        
-        <div className="flex justify-between gap-4 text-gray-500 mb-4 text-lg uppercase tracking-wide ">
+        <div className="flex justify-between text-gray-500 mb-4 text-lg uppercase tracking-wide">
           {daysOfWeek.map((day, index) => (
-            <span key={day}
-              
+            <span
+              key={day}
               className={`${
                 currentDayIndex === (index + 1)  ? "underline text-black" : ""
               } hover:text-black`}
@@ -64,11 +64,11 @@ export const Digitalclock = () => {
         </div>
 
         
-        {/* {!is24HourFormat && (
+        {!is24HourFormat && (
           <div className="text-gray-600 text-lg mt-2">
             {time.getHours() >= 12 ? "PM" : "AM"}
           </div>
-        )} */}
+        )}
 
         
         <div className="text-gray-500 text-sm mt-4">
